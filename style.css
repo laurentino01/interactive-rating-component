@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Overpass", sans-serif;
+  color: white;
+}
+p {
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+}
+.container-fluid {
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.card {
+  border-radius: 15px;
+  width: 20rem;
+  background-color: hsl(213, 19%, 18%);
+}
+.card-body__icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(213, 19%, 25%);
+  border-radius: 50px;
+}
+.card-body > * {
+  margin-bottom: 15px;
+}
+.radio-container input {
+  display: none;
+}
+.radio-container {
+  position: relative;
+  background-color: hsl(213, 19%, 25%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.round {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.radio-container .number {
+  margin-top: 2px;
+}
+
+.radio-container input:checked + .round {
+  border: 1px solid hsl(25, 97%, 53%);
+}
+
+.radio-container:hover {
+  border: 1px solid hsl(25, 97%, 53%);
+}
+.btn {
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 50px;
+  border: none;
+}
+.btn:hover {
+  background-color: hsl(25, 88%, 34%);
+}
+.hide {
+  display: none !important;
+}
+.rating-block {
+  background-color: hsl(213, 19%, 25%);
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+.rating-block p {
+  display: inline;
+  color: hsl(25, 97%, 53%);
+}
+/*attribuiton*/
+.attribution {
+  color: black;
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
